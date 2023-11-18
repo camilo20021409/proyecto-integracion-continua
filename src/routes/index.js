@@ -1,6 +1,22 @@
 const { Router } = require("express");
 const router = Router();
 
+router.get("/1000", (req, res) =>
+  res.json([
+    {
+      _id: { $oid: "29" },
+      acertijo: "¿Cuál es la moneda oficial de Japón?",
+      opciones: {
+        A: "Won",
+        B: "Yuan",
+        C: "Yen",
+        D: "Baht",
+      },
+      respuesta_correcta: "C",
+    },
+  ])
+);
+
 router.get("/", (req, res) =>
   res.json([
     {
@@ -438,6 +454,8 @@ router.get("/", (req, res) =>
     },
   ])
 );
-router.get("/1000", (req, res) => res.json([]));
+
+
+
 
 module.exports = router;
