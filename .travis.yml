@@ -5,5 +5,3 @@ services:
 
 before_install:
   - docker build -t mi-proyecto .
-# Puedes agregar comandos adicionales según sea necesario
-
