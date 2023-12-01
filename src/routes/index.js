@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router();
 
-router.get("/1000", (req, res) =>
+router.get("/1", (req, res) =>
   res.json([
     {
       _id: { $oid: "29" },
@@ -454,8 +454,5 @@ router.get("/", (req, res) =>
     },
   ])
 );
-
-
-
 
 module.exports = router;
